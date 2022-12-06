@@ -12,7 +12,7 @@ export default defineComponent({
   name: "Home",
   data() {
     return {
-      routerTest: "/test",
+      routerTest: "/home/test",
     };
   },
 });

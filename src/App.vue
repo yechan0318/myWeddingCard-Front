@@ -1,19 +1,39 @@
 <template>
   <v-app>
-    <v-main>
+    <v-container ma-0 pa-0 fill-height>
       <router-view />
-      <HelloWorld />
-    </v-main>
+    </v-container>
   </v-app>
 </template>
 
 <script lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
 import { defineComponent } from "vue";
 
-export default defineComponent({
-  components: {
-    HelloWorld,
-  },
-});
+export default defineComponent({});
 </script>
+
+<style scoped>
+.container {
+  max-width: 500x;
+  background-color: white;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+</style>
