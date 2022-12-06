@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <router-view />
-  </div>
+  <v-app>
+    <v-container ma-0 pa-0 fill-height>
+      <router-view />
+    </v-container>
+  </v-app>
 </template>
 
 <script long="ts">
